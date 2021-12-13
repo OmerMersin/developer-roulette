@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="323dp"
+        android:layout_height="309dp"
+        android:layout_marginBottom="84dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.762"
+        app:srcCompat="@drawable/engineering_vector" />
+
+    <Button
+        android:id="@+id/debugButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#000000"
+        android:fontFamily="@font/fira_mono"
+        android:text="Debug"
+        android:textColor="#64DD17"
+        android:textColorHighlight="#00C853"
+        android:textColorHint="#00BFA5"
+        android:textColorLink="#AEEA00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#00FFFFFF" />
+
+    <TextView
+        android:id="@+id/virusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fira_mono"
+        android:text="The virus is processing"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <ProgressBar
+        android:id="@+id/healthBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="313dp"
+        android:layout_height="28dp"
+        android:max="15"
+        android:progress="10"
+        android:progressTint="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hackScore" />
+
+    <TextView
+        android:id="@+id/hackScore"
+        android:layout_width="92dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="16dp"
+        android:background="#FF0000"
+        android:text="Score"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/codeScore"
+        android:layout_width="87dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="364dp"
+        android:background="#64DD17"
+        android:text="Score"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="4dp"
+        android:text="Health:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hackerHealthView"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="2dp"
+        android:text="10"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="344dp"
+        android:layout_height="279dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hackeril" />
+
+    <TextView
+        android:id="@+id/code1"
+        android:layout_width="345dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="#59000000"
+        android:text="."
+        android:textColor="#FF0000"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/code2"
+        android:layout_width="347dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="35dp"
+        android:background="#59000000"
+        android:text="."
+        android:textColor="#FF0000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/code1" />
+
+    <TextView
+        android:id="@+id/code3"
+        android:layout_width="340dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="35dp"
+        android:background="#59000000"
+        android:text="."
+        android:textColor="#FF0000"
+        android:textColorHighlight="#FF0000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/code2" />
+
+    <TextView
+        android:id="@+id/code4"
+        android:layout_width="318dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="#59000000"
+        android:text="."
+        android:textColor="#64DD17"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/code5"
+        android:layout_width="321dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="35dp"
+        android:background="#59000000"
+        android:text="."
+        android:textColor="#64DD17"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/code4" />
+
+    <TextView
+        android:id="@+id/code6"
+        android:layout_width="324dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="35dp"
+        android:background="#59000000"
+        android:text="."
+        android:textColor="#64DD17"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/code5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
